@@ -10,13 +10,13 @@ class DbConnection{
  
     public function __construct(){
 		try{
-		if (!isset($this->connection)){
-			$this->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
-		}
-		else{
-			throw new Exception('Unable to connect');
-		}
-		
+			if (!isset($this->connection)){
+				$this->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
+			}
+			else{
+				throw new Exception('Unable to connect');
+			}
+		} 
 		catch(Exception $e){
 			echo 'Cannot connect to database server';
 			exit;
