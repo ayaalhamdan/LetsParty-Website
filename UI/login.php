@@ -19,7 +19,7 @@ if (isset($_POST['login'])){
 		}else if ($rowUser['type']==2){
 			header('location:SP.php');
 			echo mysqli_num_rows($query);
-		}
+		}throw new Exception("Value must be 1 or below");
 	}
 		
     else $incorrect=true;
