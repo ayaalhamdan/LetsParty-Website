@@ -4,7 +4,7 @@ version: 2
       docker:      
         - image: circleci/node:7.10-browsers        
       environment:          
-        CHROME_BIN: "/usr/bin/google-chrome"    
+      CHROME_BIN: "/usr/bin/google-chrome"    
       steps:      
         - checkout      
         - run: npm install      
