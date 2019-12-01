@@ -1,12 +1,14 @@
 <?php
 include_once('DbConnection.php');
  
-class User extends DbConnection{
+abstract class User extends DbConnection{
 	
 	    private $username;
 		private $password;
 		private $email;
  
+public abstract function view_orders();
+
     public function __construct(){
  
         parent::__construct();
@@ -14,6 +16,19 @@ class User extends DbConnection{
  
     public function check_login($username, $password){ 
         $sql = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
+        $query = $this->connection->query($sql);
+ 
+        if($query->num_rows > 0){
+            $row = $query->fetch_array();
+            return $row['id'];
+        }
+        else{
+            return false;
+        }
+    }
+
+    public function check_login2($email, $password){ 
+        $sql = "SELECT * FROM users WHERE email = '$email' AND password = '$password'";
         $query = $this->connection->query($sql);
  
         if($query->num_rows > 0){
@@ -55,4 +70,5 @@ class User extends DbConnection{
         return $this->connection->real_escape_string($value);
     }
 }
+    
 ?>

@@ -47,6 +47,18 @@ class User extends DbConnection{
             return false;
         }
     }
+    public function check_login2($email, $password){ 
+        $sql = "SELECT * FROM users WHERE email = '$email' AND password = '$password'";
+        $query = $this->connection->query($sql);
+ 
+        if($query->num_rows > 0){
+            $row = $query->fetch_array();
+            return $row['id'];
+        }
+        else{
+            return false;
+        }
+    }
 	
 	public function reg_user($email,$username,$password,$name){
             $sql="SELECT * FROM users WHERE username='$username' OR email='$email'";

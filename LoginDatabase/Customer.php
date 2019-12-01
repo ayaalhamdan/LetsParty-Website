@@ -1,9 +1,16 @@
 <?php
 class Customer extends User{
 
-
     private $address;
     private $mobilenumber;
+
+    public function view_orders(){
+        if(@$_SESSION['userID']==""){
+            header('location: login.php');
+        
+        $user_id=$_SESSION['userID'];
+        $user_products_query="select it.id,it.name,it.price from users_items ut inner join items it on it.id=ut.item";
+    }}
 
 	public function __construct(){
 		parent::__construct();

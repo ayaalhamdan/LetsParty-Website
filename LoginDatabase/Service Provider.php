@@ -1,11 +1,20 @@
 <?php
-class Customer extends User{
-
+class ServiceProvider extends User{
 
     private $orders;
     private $mobilenumber;
 
-	public function __construct(){
+    public function view_orders(){
+
+        $no_of_user_products= mysqli_num_rows($user_products_result);
+        if($no_of_user_products!=0){
+        while($row=mysqli_fetch_array($user_products_result)){
+            echo $row;
+        }
+    }
+    }
+
+	public function __connstruct(){
 		parent::__construct();
 	}
 	
