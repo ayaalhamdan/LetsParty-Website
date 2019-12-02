@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<head>
 		<?php include 'Head.php';?>
 	</head>
@@ -12,6 +15,9 @@
 
     <?php include 'auth.php';?>	
             <section class="ftco-section bg-light ftco-bread">
+			<ul class="pager">         
+				<li class="previous"><a href="Index.php">Previous</a></li>
+			</ul>
                 <div class="container">
                     <div class="row no-gutters slider-text align-items-center">
                         <div class="col-md-9 ftco-animate">
@@ -27,7 +33,7 @@
                 <div class="photograhy">
                     <div class="row no-gutters">
                         <div class="col-md-4 ftco-animate">
-                            <a href="Explore.html" class="photography-entry img d-flex justify-content-center align-items-center" style="background-image: url(images/all.jpg);">
+                            <a href="Index.php" class="photography-entry img d-flex justify-content-center align-items-center" style="background-image: url(images/all.jpg);">
                                 <div class="overlay"></div>
                                 <div class="text text-center">
 

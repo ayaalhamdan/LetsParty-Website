@@ -18,8 +18,8 @@
 		<div class="d-flex justify-content-center">
 			<ul class="d-flex align-items-center">
 			
-				<li class="d-flex align-items-center jusitfy-content-center"><a href="https://twitter.com/login?lang=en" target="_blank" ><i class="icon-twitter"></i></a></li>
-				<li class="d-flex align-items-center jusitfy-content-center"><a href="https://www.instagram.com/" target="_blank" ><i class="icon-instagram"></i></a></li>
+				<li class="d-flex align-items-center jusitfy-content-center"><a href="https://twitter.com/letsparty_app" target="_blank" ><i class="icon-twitter"></i></a></li>
+				<li class="d-flex align-items-center jusitfy-content-center"><a href="https://www.instagram.com/letsparty_app?igshid=4e9itxc4owuo" target="_blank" ><i class="icon-instagram"></i></a></li>
 			
 			</ul>
 		</div>

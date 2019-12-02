@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <!--hi sara-->
 	<head>
 		<?php include 'Head.php';?>
@@ -14,10 +15,13 @@
     <?php include 'auth.php';?>	
 
 			<section class="ftco-section bg-light ftco-bread">
+
 				<div class="container">
+				
 					<div class="row no-gutters slider-text align-items-center">
 					<div class="col-md-9 ftco-animate">
 						<p class="breadcrumbs"><span class="mr-2"></span></p>
+						
 						<h1 class="mb-3 bread">Explore</h1>
 						<p>Whatever you need, whenever you want is here. Pick the picture that you like and order it!</p>
 					</div>
